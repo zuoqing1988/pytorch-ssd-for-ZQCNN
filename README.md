@@ -115,6 +115,8 @@ VOC 格式
 
 用https://github.com/daquexian/onnx-simplifier
 
+pip install onnx-simplifier
+
 python -m onnxsim in_file out_file
 
 # 推理
