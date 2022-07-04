@@ -353,11 +353,11 @@ class RandomSampleCrop(object):
                     current_labels = labels[mask]
 
                     # should we use the box left and top corner or the crop's
-                    current_boxes[:, :2] = np.maximum(current_boxes[:, :2], rect[:2])
+                    #current_boxes[:, :2] = np.maximum(current_boxes[:, :2], rect[:2])
                     # adjust to crop (by substracting crop's left,top)
                     current_boxes[:, :2] -= rect[:2]
 
-                    current_boxes[:, 2:] = np.minimum(current_boxes[:, 2:], rect[2:])
+                    #current_boxes[:, 2:] = np.minimum(current_boxes[:, 2:], rect[2:])
                     # adjust to crop (by substracting crop's left,top)
                     current_boxes[:, 2:] -= rect[:2]
 
